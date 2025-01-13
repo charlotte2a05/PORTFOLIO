@@ -1,0 +1,394 @@
+/* styles.css */
+body {
+    front-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(228, 143, 237);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+h1 span {
+    font-size: 1.2em;
+    color: rgb(228, 143, 237);
+    font-family: "Blinker", sans-serif;
+}
+
+.avatar {
+    margin: 20px auto; 
+    width: 150px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.presentation {
+    font-size: 0.9em;
+    color: #856565;
+    margin-top: 10px;
+}
+
+.toggle-btn {
+    display: none;
+    background: none;
+    color: #f8f8f4;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Configuration générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  nav ul li a {
+    position : static;
+    text-decoration: none;
+    color: rgb(228, 143, 237);
+    font-weight: bold;
+  }
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Conteneur principal */
+  main {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+  }
+  .container {
+    text-align: center;
+  }
+  
+  /* Titre */
+  h1 {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenu */
+  .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Photo */
+  .photo img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Texte */
+  .about {
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  h2, h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Logiciels utilisés */
+  .software {
+    display: flex;
+    gap: 10px;
+  }
+  .software img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Réinitialisation et style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: rgb(228, 143, 237);
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Pour que la barre soit bien visible */
+    z-index: 1000; /* Pour s'assurer que la barre est au-dessus des autres éléments */
+    box-shadow: 0px 2px 5px rgba(232, 220, 220, 0.1); /* Optionnel : ajouter une ombre pour un effet visuel */
+    }
+  nav {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ec7575;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  /* Section parcours (gauche) */
+  .parcours {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .section-item {
+    margin-bottom: 30px;
+  }
+  
+  .section-item h2 {
+    font-size: 2rem;
+    color: #C69323;
+    text-transform: uppercase;
+  }
+  
+  .section-item img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .section-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Section avenir (droite) */
+  .avenir {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .avenir h1 {
+    font-size: 2.5rem;
+    color: #C69323;
+    text-transform: uppercase;
+  }
+  
+  .avenir h3 {
+    color: #C69323;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .avenir img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .avenir p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  /* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    }
+    
+    /* Navigation */
+    nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    
+    nav ul li a {
+    text-decoration: none;
+    color: rgb(228, 143, 237);
+    margin: 0 20px;
+    font-size: 18px;
+    }
+    
+    nav ul li a.active {
+    font-weight: bold;
+    }
+    
+    /* Titre principal */
+    .header {
+    text-align: left;
+    margin: 40px 60px;
+    }
+    
+    .header .big {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(228, 143, 237) /* Violet pastel */
+    }
+    
+    .header .stars {
+    font-size: 20px;
+    color: #FFB600; /* Or */
+    }
+    
+    /* Galerie d'images */
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    }
+    
+    .gallery .item img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    }
+    
+    .gallery .item img:hover {
+    transform: scale(1.05);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .gallery {
+    grid-template-columns: 1fr;
+    }
+    
+    .header .big {
+    font-size: 50px;
+    }
+    }
+    
+    /* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+    
+    body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    }
+    
+    header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    }
+    
+    h1 {
+    font-size: 2.5rem;
+    }
+    
+    main {
+    padding: 20px;
+    }
+    
